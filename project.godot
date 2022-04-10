@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="CapybaraRepublicGame"
+run/main_scene="res://Escena/HotelV1.tscn"
 config/icon="res://icon.png"
 
 [physics]
