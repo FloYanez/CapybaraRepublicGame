@@ -50,3 +50,9 @@ stretch_mode = 5
 [node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 605, 278 )
 scale = Vector2( 2, 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.161
+autostart = true
+
+[connection signal="timeout" from="Timer" to="KinematicBody2D" method="_on_Timer_timeout"]
