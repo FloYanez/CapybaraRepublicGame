@@ -1,6 +1,7 @@
 extends MarginContainer
 
 
+
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -15,8 +16,10 @@ func _ready():
 #	pass
 
 
+
 func _on_play_pressed():
 	get_tree().change_scene("res://scenes/Main.tscn")
 	
 func _on_exit_pressed():
 	get_tree().quit() 
+
