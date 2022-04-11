@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Escena/PiezaA.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Escena/PiezaFLO.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Escena/PiezaERIC.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/CityTileSet.png" type="Texture" id=4]
+[ext_resource path="res://Escena/ActionsMenu.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 24, 0, 24, 0, 0, 32, 0 )
@@ -80,3 +81,7 @@ tile_set = SubResource( 3 )
 cell_size = Vector2( 8, 8 )
 format = 1
 tile_data = PoolIntArray( 1572856, 1, 0, 1572857, 1, 0, 1572858, 1, 0, 1572859, 1, 0, 1572860, 1, 0, 1572861, 1, 0, 1572862, 1, 0, 1572863, 1, 0, 1507328, 1, 0, 1507329, 1, 0, 1507330, 1, 0, 1507331, 1, 0, 1507332, 1, 0, 1507333, 1, 0, 1507334, 1, 0, 1507335, 1, 0, 1507336, 1, 0, 1507337, 1, 0, 1507338, 1, 0, 1507339, 1, 0, 1507340, 1, 0, 1507341, 1, 0, 1507342, 1, 0, 1507343, 1, 0, 1507344, 1, 0, 1507345, 1, 0, 1507346, 1, 0, 1507347, 1, 0, 1507348, 1, 0, 1507349, 1, 0, 1507350, 1, 0, 1507351, 1, 0, 1507352, 1, 0, 1507353, 1, 0, 1507354, 1, 0, 1507355, 1, 0, 1507356, 1, 0, 1507357, 1, 0, 1507358, 1, 0, 1507359, 1, 0, 1507360, 1, 0, 1507361, 1, 0, 1507362, 1, 0, 1507363, 1, 0, 1507364, 1, 0, 1507368, 1, 0, 1507369, 1, 0, 1507370, 1, 0, 1507371, 1, 0, 1507372, 1, 0, 1507373, 1, 0, 1507374, 1, 0, 1507375, 1, 0, 1507376, 1, 0, 1507377, 1, 0, 1507378, 1, 0, 1507379, 1, 0, 1507380, 1, 0, 1507381, 1, 0, 1507382, 1, 0 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ActionsMenu" parent="CanvasLayer" instance=ExtResource( 5 )]

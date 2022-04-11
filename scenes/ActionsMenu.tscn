@@ -1,20 +1,22 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Doublespace/PeaberryDoublespace.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://resources/new_theme.tres" type="Theme" id=2]
 [ext_resource path="res://resources/panel_theme.tres" type="Theme" id=3]
 [ext_resource path="res://assets/inventory/inventory.png" type="Texture" id=4]
+[ext_resource path="res://scenes/ActionsMenu.gd" type="Script" id=5]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=5]
 font_data = ExtResource( 1 )
 
 [sub_resource type="Theme" id=4]
-default_font = SubResource( 3 )
+default_font = SubResource( 5 )
 Button/fonts/font = null
 
 [node name="MarginContainer" type="MarginContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 5 )
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 margin_left = 272.0
