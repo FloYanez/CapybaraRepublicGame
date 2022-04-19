@@ -85,6 +85,7 @@ position = Vector2( 384, 208 )
 scale = Vector2( 2, 2 )
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 scale = Vector2( 2, 2 )
 tile_set = SubResource( 3 )
 cell_size = Vector2( 8, 8 )
