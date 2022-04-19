@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Escena/PiezaA.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Escena/PiezaFLO.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Escena/PiezaERIC.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/CityTileSet.png" type="Texture" id=4]
-[ext_resource path="res://Escena/ActionsMenu.tscn" type="PackedScene" id=5]
-[ext_resource path="res://29144836.jpg" type="Texture" id=6]
+[ext_resource path="res://city_landscape_2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/CityTileSet.png" type="Texture" id=2]
+[ext_resource path="res://Escena/PiezaA.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Escena/PiezaERIC.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Escena/PiezaFLO.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Escena/ActionsMenu.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 24, 0, 24, 0, 0, 32, 0 )
@@ -15,7 +15,7 @@ points = PoolVector2Array( 32, 24, 0, 24, 0, 0, 32, 0 )
 
 [sub_resource type="TileSet" id=3]
 0/name = "CityTileSet.png 0"
-0/texture = ExtResource( 4 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 216, 48, 8, 8 )
@@ -36,7 +36,7 @@ points = PoolVector2Array( 32, 24, 0, 24, 0, 0, 32, 0 )
 } ]
 0/z_index = 0
 1/name = "CityTileSet.png 1"
-1/texture = ExtResource( 4 )
+1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 192, 32, 32, 24 )
@@ -59,27 +59,30 @@ points = PoolVector2Array( 32, 24, 0, 24, 0, 0, 32, 0 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 128, 192 )
+__meta__ = {
+"_edit_vertical_guides_": [ 512.0 ]
+}
 
-[node name="fondo" type="Sprite" parent="."]
-position = Vector2( 393, 158 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 6 )
+[node name="fondo2" type="Sprite" parent="."]
+position = Vector2( 382, 161 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 1 )
 
-[node name="mono1" parent="." instance=ExtResource( 1 )]
-position = Vector2( -36, 36 )
-scale = Vector2( 0.5, 0.5 )
+[node name="mono1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 48 )
+scale = Vector2( 2, 2 )
 
-[node name="mono2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 286, 36 )
-scale = Vector2( 0.5, 0.5 )
+[node name="mono2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 384, 48 )
+scale = Vector2( 2, 2 )
 
-[node name="FLO" parent="." instance=ExtResource( 2 )]
-position = Vector2( -36, 170 )
-scale = Vector2( 0.5, 0.5 )
+[node name="FLO" parent="." instance=ExtResource( 5 )]
+position = Vector2( 0, 208 )
+scale = Vector2( 2, 2 )
 
-[node name="ERIC" parent="." instance=ExtResource( 3 )]
-position = Vector2( 286, 170 )
-scale = Vector2( 0.5, 0.5 )
+[node name="ERIC" parent="." instance=ExtResource( 4 )]
+position = Vector2( 384, 208 )
+scale = Vector2( 2, 2 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
@@ -90,5 +93,5 @@ tile_data = PoolIntArray( 1572856, 1, 0, 1572857, 1, 0, 1572858, 1, 0, 1572859, 
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ActionsMenu" parent="CanvasLayer" instance=ExtResource( 5 )]
+[node name="ActionsMenu" parent="CanvasLayer" instance=ExtResource( 6 )]
 visible = false

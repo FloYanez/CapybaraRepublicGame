@@ -10,9 +10,9 @@ onready var sprite = $Sprite
 onready var anim_player = $AnimationPlayer
 onready var anim_tree = $AnimationTree
 onready var playback = anim_tree.get("parameters/playback")
+
 func _ready():
 	anim_tree.active = true
-
 
 func _physics_process(delta): #gravedad
 	velocity = move_and_slide(velocity, Vector2.UP)
@@ -45,9 +45,3 @@ func _on_Timer_timeout():
 	direction = floor(rand_range(-1, 2)) #saca un entero aleatorio, el floor le saca los decimales
 	print (direction)
 	pass # Replace with function body.	
-
-
-
-	
-		
-

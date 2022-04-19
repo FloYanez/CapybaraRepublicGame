@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flo_side.png-3354e138aac24f28c13538a749776fc6.stex"
+path="res://.import/city_landscape_2.png-48693e668ad6c4eb7ce32b58dc820cc4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Personajes/flo_side.png"
-dest_files=[ "res://.import/flo_side.png-3354e138aac24f28c13538a749776fc6.stex" ]
+source_file="res://city_landscape_2.png"
+dest_files=[ "res://.import/city_landscape_2.png-48693e668ad6c4eb7ce32b58dc820cc4.stex" ]
 
 [params]
 

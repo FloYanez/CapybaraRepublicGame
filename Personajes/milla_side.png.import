@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flo_side.png-3354e138aac24f28c13538a749776fc6.stex"
+path="res://.import/milla_side.png-962dcc7060bca377337b95d45e14165f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Personajes/flo_side.png"
-dest_files=[ "res://.import/flo_side.png-3354e138aac24f28c13538a749776fc6.stex" ]
+source_file="res://Personajes/milla_side.png"
+dest_files=[ "res://.import/milla_side.png-962dcc7060bca377337b95d45e14165f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

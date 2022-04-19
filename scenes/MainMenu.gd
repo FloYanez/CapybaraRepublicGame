@@ -18,7 +18,7 @@ func _ready():
 
 
 func _on_play_pressed():
-	get_tree().change_scene("res://Escena/HotelV1.tscn")
+	get_tree().change_scene("res://Escena/Building.tscn")
 	
 func _on_exit_pressed():
 	get_tree().quit() 

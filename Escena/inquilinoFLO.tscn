@@ -16,13 +16,15 @@ onready var sprite = $Sprite
 onready var anim_player = $AnimationPlayer
 onready var anim_tree = $AnimationTree
 onready var playback = anim_tree.get(\"parameters/playback\")
+
 func _ready():
 	anim_tree.active = true
-
+	anim_player.play(\"Idle\")
 
 func _physics_process(delta): #gravedad
 	velocity = move_and_slide(velocity, Vector2.UP)
 	velocity.y += gravity*delta
+	
 	if is_on_floor() and velocity.y > 0: #si va cayendo con velocidad y choca de una
 		velocity.y = 0
 		
@@ -53,9 +55,8 @@ func _on_Timer_timeout():
 	pass # Replace with function body.	
 "
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 17.0
-height = 28.0
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 12, 24 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -208,21 +209,17 @@ states/Idle/position = Vector2( 142, 66 )
 states/walk/node = SubResource( 11 )
 states/walk/position = Vector2( 345, 66 )
 transitions = [ "walk", "Idle", SubResource( 12 ), "Idle", "walk", SubResource( 13 ) ]
-start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=10]
 
 [node name="FLO" type="KinematicBody2D"]
-position = Vector2( 467, 437 )
+position = Vector2( 12, 24 )
 script = SubResource( 14 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8, 0 )
-shape = SubResource( 1 )
+shape = SubResource( 15 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -8, -3 )
-scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 2 )
 hframes = 4
 
