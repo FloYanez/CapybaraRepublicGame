@@ -19,7 +19,6 @@ onready var playback = anim_tree.get(\"parameters/playback\")
 
 func _ready():
 	anim_tree.active = true
-	anim_player.play(\"Idle\")
 
 func _physics_process(delta): #gravedad
 	velocity = move_and_slide(velocity, Vector2.UP)
@@ -209,6 +208,7 @@ states/Idle/position = Vector2( 142, 66 )
 states/walk/node = SubResource( 11 )
 states/walk/position = Vector2( 345, 66 )
 transitions = [ "walk", "Idle", SubResource( 12 ), "Idle", "walk", SubResource( 13 ) ]
+start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=10]
 
