@@ -65,7 +65,8 @@ __meta__ = {
 }
 
 [node name="animated_background" parent="." instance=ExtResource( 8 )]
-position = Vector2( 512, 352 )
+position = Vector2( 498, 333 )
+scale = Vector2( 6, 6 )
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 512, 416 )

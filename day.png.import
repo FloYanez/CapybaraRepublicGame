@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/greedysabotagestill.png-d902f79929ae987fd577c6fc6cba7c49.stex"
+path="res://.import/day.png-f437cbcfb4368d6e59bc073d0c0f2141.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/greedysabotagestill.png"
-dest_files=[ "res://.import/greedysabotagestill.png-d902f79929ae987fd577c6fc6cba7c49.stex" ]
+source_file="res://day.png"
+dest_files=[ "res://.import/day.png-f437cbcfb4368d6e59bc073d0c0f2141.stex" ]
 
 [params]
 
