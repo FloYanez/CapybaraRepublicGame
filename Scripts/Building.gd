@@ -1,9 +1,9 @@
 extends Node2D
 onready var backgroundcycle = $animated_background/AnimationPlayer
-var day = true
+var day = true        #empieza en día
 var accept_input= true
-func _input(event):
-	if not accept_input:
+func _input(event):   #func que esperara un input
+	if not accept_input:#si no hay input no pasa nada
 		return
 	if event.is_action_pressed('w'):
 		accept_input= false
