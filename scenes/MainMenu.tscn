@@ -88,13 +88,14 @@ __meta__ = {
 }
 
 [node name="animated_background" parent="." instance=ExtResource( 7 )]
-position = Vector2( 512, 328 )
+position = Vector2( 498, 333 )
+scale = Vector2( 6, 6 )
 
 [node name="Capybara" type="AnimatedSprite" parent="."]
 position = Vector2( 824, 456 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 16 )
-frame = 1
+frame = 3
 speed_scale = 2.0
 playing = true
 
@@ -118,7 +119,6 @@ theme = SubResource( 4 )
 position = Vector2( 98, -72 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 10 )
-frame = 4
 playing = true
 
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
