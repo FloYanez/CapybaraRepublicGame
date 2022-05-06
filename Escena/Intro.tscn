@@ -101,7 +101,7 @@ expand = true
 modulate = Color( 0.686275, 0.133333, 0.133333, 1 )
 margin_left = 50.0
 margin_top = -9.0
-margin_right = 203.0
+margin_right = 288.0
 margin_bottom = 40.0
 
 [node name="Text" type="RichTextLabel" parent="Dialogue"]
@@ -121,7 +121,7 @@ text = "HOLA GENTE
 [node name="Name" type="RichTextLabel" parent="Dialogue"]
 margin_left = 60.0
 margin_top = -5.0
-margin_right = 192.0
+margin_right = 256.0
 margin_bottom = 34.0
 theme = ExtResource( 5 )
 text = "Name"

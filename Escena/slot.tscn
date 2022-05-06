@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/slot.gd" type="Script" id=2]
+[ext_resource path="res://assets/inventory/slot_empty.png" type="Texture" id=3]
+[ext_resource path="res://assets/inventory/slot_full.png" type="Texture" id=4]
+
+[node name="Node2D" type="TextureRect"]
+margin_left = 15.0
+margin_top = 16.0
+margin_right = 135.0
+margin_bottom = 136.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 3 )
+expand = true
+script = ExtResource( 2 )
+empty_texture = ExtResource( 3 )
+full_texture = ExtResource( 4 )
