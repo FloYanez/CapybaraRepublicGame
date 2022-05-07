@@ -5,8 +5,12 @@ var dialog_index = 0
 var finished = false # que al final del dialogo cambi esta variable a true, y al final tiene que haber una funcion que se active es verdadera y pase a la siguiente escena
 var end_intro = false
 
+onready var transition_timer = get_node("Sprite/transition_timer")
+onready var sprite = $Sprite
+onready var anim_player = $Sprite/AnimationPlayer
+
 export var dialogPath = ""
-export (float) var textSpeed = 0.05
+export (float) var textSpeed = 0.03
 
 
 func _ready():
@@ -38,6 +42,9 @@ func getDialog() -> Array:
 func nextdialog() -> void:
 	if dialog_index >= len(dialog): # si terminamos de leer la lista
 #		queue_free() #este termina la animación pero quizá es mejor que pase a otra escena
+		anim_player.play("wink")
+		yield(get_tree().create_timer(2), "timeout")
+		get_tree().change_scene("res://Escena/Building.tscn")
 		return
 	finished=false
 	$Name.bbcode_text = dialog[dialog_index]["Name"]#esto define donde van los extraibles del json
