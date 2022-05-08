@@ -1,0 +1,14 @@
+{
+    "0": {
+        "item": "raton",
+        "icon": "animals.png"
+    },
+    "1": {
+        "item": "agua",
+        "icon": "waterdrop.png"
+    },
+    "2": {
+        "item": "luz",
+        "icon": "lights.png"
+    }
+}
