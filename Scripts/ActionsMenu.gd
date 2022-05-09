@@ -1,6 +1,6 @@
 extends MarginContainer
 
-onready var grid_container = $GridContainer
+onready var grid_container = $Inventory/Items
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
