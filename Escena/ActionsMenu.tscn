@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/ActionsMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/inventory/inventory_bg.png" type="Texture" id=2]
@@ -6,8 +6,11 @@
 [ext_resource path="res://Escena/Item.tscn" type="PackedScene" id=4]
 [ext_resource path="res://resources/new_theme.tres" type="Theme" id=5]
 [ext_resource path="res://assets/inventory/slot_empty.png" type="Texture" id=6]
+[ext_resource path="res://assets/inventory/slot_full.png" type="Texture" id=7]
+[ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=8]
 
 [node name="ActionsMenu" type="MarginContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 202.0
@@ -55,6 +58,8 @@ margin_left = 0.0
 margin_top = 0.0
 margin_right = 200.0
 margin_bottom = 200.0
+texture = ExtResource( 7 )
+empty = false
 
 [node name="Item" parent="Inventory/Items/Node2D3" instance=ExtResource( 4 )]
 
@@ -63,12 +68,16 @@ margin_left = 204.0
 margin_top = 0.0
 margin_right = 404.0
 margin_bottom = 200.0
+texture = ExtResource( 7 )
+empty = false
 
 [node name="Node2D2" parent="Inventory/Items" instance=ExtResource( 3 )]
 margin_left = 408.0
 margin_top = 0.0
 margin_right = 608.0
 margin_bottom = 200.0
+texture = ExtResource( 7 )
+empty = false
 
 [node name="Node2D4" parent="Inventory/Items" instance=ExtResource( 3 )]
 margin_left = 612.0
@@ -112,9 +121,22 @@ margin_top = 204.0
 margin_right = 1016.0
 margin_bottom = 404.0
 
-[node name="TextureRect" type="TextureRect" parent="Inventory"]
+[node name="Legend" type="TextureRect" parent="Inventory"]
 margin_top = 517.0
 margin_right = 1016.0
 margin_bottom = 773.0
 texture = ExtResource( 6 )
 stretch_mode = 1
+
+[node name="LegendLabel" type="Label" parent="Inventory/Legend"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -300.5
+margin_top = 36.0
+margin_right = 300.5
+margin_bottom = 213.0
+theme = ExtResource( 8 )
+text = "Esta casilla está vacía."
+align = 1
+autowrap = true
