@@ -97,4 +97,3 @@ tile_data = PoolIntArray( 1572856, 1, 0, 1572857, 1, 0, 1572858, 1, 0, 1572859, 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ActionsMenu" parent="CanvasLayer" instance=ExtResource( 6 )]
-visible = false
