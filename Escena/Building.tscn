@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
+[ext_resource path="res://Escena/VampireRoom.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/CityTileSet.png" type="Texture" id=2]
-[ext_resource path="res://Escena/PiezaA.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Escena/MillaRoom.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Escena/PiezaERIC.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Escena/PiezaFLO.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Escena/ActionsMenu.tscn" type="PackedScene" id=6]
@@ -75,16 +76,16 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="mono1" parent="Node2D" instance=ExtResource( 3 )]
+[node name="Milla" parent="Node2D" instance=ExtResource( 3 )]
 position = Vector2( -192, 0 )
 
-[node name="mono2" parent="Node2D" instance=ExtResource( 3 )]
-position = Vector2( 0, -80 )
+[node name="Flo" parent="Node2D" instance=ExtResource( 5 )]
 
-[node name="FLO" parent="Node2D" instance=ExtResource( 5 )]
-
-[node name="ERIC" parent="Node2D" instance=ExtResource( 4 )]
+[node name="Eric" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( -192, -80 )
+
+[node name="Vampire" parent="Node2D" instance=ExtResource( 1 )]
+position = Vector2( 0, -80 )
 
 [node name="TileMap" type="TileMap" parent="."]
 visible = false

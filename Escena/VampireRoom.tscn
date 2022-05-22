@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/depto02.png" type="Texture" id=1]
-[ext_resource path="res://Escena/inquilinoERIC.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/depto01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/depto04.png" type="Texture" id=2]
+[ext_resource path="res://Escena/VampireTenant.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 96, 2 )
@@ -19,11 +20,11 @@ texture = ExtResource( 1 )
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 192.0
 margin_bottom = 96.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 expand = true
 stretch_mode = 5
 
-[node name="FLO" parent="." instance=ExtResource( 3 )]
+[node name="Vampire" parent="." instance=ExtResource( 4 )]
 position = Vector2( 96, 48 )
 
 [node name="Timer" type="Timer" parent="."]
@@ -47,5 +48,3 @@ shape = SubResource( 4 )
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 2, 38 )
 shape = SubResource( 4 )
-
-[connection signal="timeout" from="Timer" to="FLO" method="_on_Timer_timeout"]
