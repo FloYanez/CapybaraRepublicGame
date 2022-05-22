@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Resources/tenant.gd" type="Script" id=1]
+[ext_resource path="res://Assets/depto04.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/tenants/vampire_front.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/tenants/vampire_side.png" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+front = ExtResource( 3 )
+side = ExtResource( 4 )
+apartment = ExtResource( 2 )
+likes = {
+"lights_off": true
+}

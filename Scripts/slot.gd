@@ -27,7 +27,7 @@ func set_legend(value):
 func set_item_icon(value):
 	_item = value
 	var i = Item.instance()
-	i.texture = load("res://assets/inventory/waterdrop.png")
+	i.texture = load("res://assets/Sprites/inventory/waterdrop.png")
 	add_child(i)
 	set_empty(false)
 	

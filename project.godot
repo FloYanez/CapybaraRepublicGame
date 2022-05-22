@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "Slot",
 "language": "GDScript",
 "path": "res://Scripts/slot.gd"
+}, {
+"base": "Resource",
+"class": "Tenant",
+"language": "GDScript",
+"path": "res://Scripts/Resources/tenant.gd"
 } ]
 _global_script_class_icons={
 "Inquilino": "",
-"Slot": ""
+"Slot": "",
+"Tenant": ""
 }
 
 [application]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/genericApartment.gd" type="Script" id=1]
+[ext_resource path="res://Escena/genericTenant.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/depto01.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 96, 2 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 2, 34 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 192.0
+margin_bottom = 96.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 5
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 96, 2 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 96, 74 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 190, 38 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2, 38 )
+shape = SubResource( 4 )
+
+[node name="Tenant" type="Node2D" parent="."]
+
+[node name="Tenant" parent="Tenant" instance=ExtResource( 2 )]
+position = Vector2( 96, 48 )

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://wink.png" type="Texture" id=1]
+[ext_resource path="res://Assets/wink.png" type="Texture" id=1]
 [ext_resource path="res://assets/DialogueContainer.png" type="Texture" id=2]
 [ext_resource path="res://assets/nextbutton.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Dialogue.gd" type="Script" id=4]
