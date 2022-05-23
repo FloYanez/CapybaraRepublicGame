@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hippie_girl_apartment.png-280e92068c0a8337feab1d64b3912aa1.stex"
+path="res://.import/flora_apartment.png-71e5ca32db57a613aabd7059aa79eae2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tenants/hippie_girl_apartment.png"
-dest_files=[ "res://.import/hippie_girl_apartment.png-280e92068c0a8337feab1d64b3912aa1.stex" ]
+source_file="res://Assets/Sprites/tenants/flora_apartment.png"
+dest_files=[ "res://.import/flora_apartment.png-71e5ca32db57a613aabd7059aa79eae2.stex" ]
 
 [params]
 

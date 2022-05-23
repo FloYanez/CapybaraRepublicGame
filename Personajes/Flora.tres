@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Resources/tenant.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/tenants/flora_side.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/tenants/flora_apartment.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/tenants/flora_front.png" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+front = ExtResource( 4 )
+side = ExtResource( 2 )
+apartment = ExtResource( 3 )
+likes = {
+}
