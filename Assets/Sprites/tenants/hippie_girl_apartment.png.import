@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/depto01.png-196355035f1a0c470d6c2a0f5f03b291.stex"
+path="res://.import/hippie_girl_apartment.png-280e92068c0a8337feab1d64b3912aa1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/depto01.png"
-dest_files=[ "res://.import/depto01.png-196355035f1a0c470d6c2a0f5f03b291.stex" ]
+source_file="res://Assets/Sprites/tenants/hippie_girl_apartment.png"
+dest_files=[ "res://.import/hippie_girl_apartment.png-280e92068c0a8337feab1d64b3912aa1.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

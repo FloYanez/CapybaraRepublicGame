@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/tenant_node.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/tenants/flo_front.png" type="Texture" id=2]
-[ext_resource path="res://Personajes/vampire.tres" type="Resource" id=3]
+[ext_resource path="res://Personajes/Vampire.tres" type="Resource" id=3]
 
 [sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 12, 24 )

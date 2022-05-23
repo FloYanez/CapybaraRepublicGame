@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/idleA.png-c679f6089bc64be2b462658ee2ad1553.stex"
+path="res://.import/hippie_girl_front.png-cac4cd997e217051022f92cddfe49ade.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tenants/idleA.png"
-dest_files=[ "res://.import/idleA.png-c679f6089bc64be2b462658ee2ad1553.stex" ]
+source_file="res://Assets/Sprites/tenants/hippie_girl_front.png"
+dest_files=[ "res://.import/hippie_girl_front.png-cac4cd997e217051022f92cddfe49ade.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
