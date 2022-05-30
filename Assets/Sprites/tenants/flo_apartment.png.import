@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flo_apartment.png-448a01884bdd487b2ad4ac9642d3ca28.stex"
+path="res://.import/flo_apartment.png-9e3c0da85ea58a053790345c97b6905f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tenants/flo_apartment.png"
-dest_files=[ "res://.import/flo_apartment.png-448a01884bdd487b2ad4ac9642d3ca28.stex" ]
+source_file="res://assets/Sprites/tenants/flo_apartment.png"
+dest_files=[ "res://.import/flo_apartment.png-9e3c0da85ea58a053790345c97b6905f.stex" ]
 
 [params]
 

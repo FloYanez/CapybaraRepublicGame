@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wink.png-0f0e8ab7f1fa3877ee963e587eca88ea.stex"
+path="res://.import/wink.png-fb518ee3c486acdcc4086139a900cda7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/wink.png"
-dest_files=[ "res://.import/wink.png-0f0e8ab7f1fa3877ee963e587eca88ea.stex" ]
+source_file="res://assets/wink.png"
+dest_files=[ "res://.import/wink.png-fb518ee3c486acdcc4086139a900cda7.stex" ]
 
 [params]
 

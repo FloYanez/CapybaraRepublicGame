@@ -1,17 +1,17 @@
 {
     "0": {
-        "item": "raton",
-        "icon": "animals.png",
-        "legend": "Invadir departamento del inquilino con una plaga de ratas."
-    },
-    "1": {
         "item": "agua",
         "icon": "waterdrop.png",
         "legend": "Cortar el agua en el departamento del inquilino."
     },
+    "1": {
+        "item": "raton",
+        "icon": "animals200_2.png",
+        "legend": "Invadir departamento del inquilino con una plaga de ratas."
+    },
     "2": {
         "item": "luz",
-        "icon": "lights.png",
+        "icon": "lights5_2.png",
         "legend": "Cortar la luz en el departamento del inquilino."
     }
 }
