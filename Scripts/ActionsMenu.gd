@@ -17,6 +17,7 @@ func _ready():
 		var slot: Slot = grid_container.get_child(int(slotIndex))
 		slot.set_item(items[slotIndex].item)
 		slot.set_legend(items[slotIndex].legend)
+		slot.set_item_icon(items[slotIndex].icon)
 		_legends.append(items[slotIndex].legend)
 	
 func _input(event):
