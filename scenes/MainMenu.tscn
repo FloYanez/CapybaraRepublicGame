@@ -119,7 +119,7 @@ theme = SubResource( 4 )
 position = Vector2( 98, -72 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 10 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
