@@ -8,7 +8,9 @@ var tenants_apartments = []
 func set_current_action(action):
 	_current_action = action
 	on_action = true
-	for i in tenants_apartments:
-		i.apply_button.visible = true
 	print(_current_action)
-	print(tenants_apartments)
+	while Gamecontroller.tenants_apartments.size() > 6:
+		Gamecontroller.tenants_apartments.pop_front()
+	for i in tenants_apartments:
+		print(i)
+		i.apply_button.visible = true

@@ -11,5 +11,9 @@ front = ExtResource( 2 )
 side = ExtResource( 4 )
 apartment = ExtResource( 3 )
 likes = {
+"agua": 0,
+"luz": -1,
+"raton": -2
 }
+current_likes = 6
 name = "Chef"
