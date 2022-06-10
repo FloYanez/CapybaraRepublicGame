@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brick_wall_background_generated.jpg-8bd78cfb3622a074077bc2f9bbab42e7.stex"
+path="res://.import/brick_wall_background_generated.jpg-b024660d73467277b48fe077404604d3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/backgrounds/brick_wall_background_generated.jpg"
-dest_files=[ "res://.import/brick_wall_background_generated.jpg-8bd78cfb3622a074077bc2f9bbab42e7.stex" ]
+source_file="res://Assets/Sprites/backgrounds/brick_wall_background_generated.jpg"
+dest_files=[ "res://.import/brick_wall_background_generated.jpg-b024660d73467277b48fe077404604d3.stex" ]
 
 [params]
 

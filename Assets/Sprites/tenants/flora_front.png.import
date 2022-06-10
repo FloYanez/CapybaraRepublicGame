@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flora_front.png-e793ec2f6f9e054a714e49e842a6d3a5.stex"
+path="res://.import/flora_front.png-f08237d3a1a2ec4bb946c363008f08c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/tenants/flora_front.png"
-dest_files=[ "res://.import/flora_front.png-e793ec2f6f9e054a714e49e842a6d3a5.stex" ]
+source_file="res://Assets/Sprites/tenants/flora_front.png"
+dest_files=[ "res://.import/flora_front.png-f08237d3a1a2ec4bb946c363008f08c1.stex" ]
 
 [params]
 

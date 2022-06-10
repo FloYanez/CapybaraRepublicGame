@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/depto02.png-d5a9f39617baa01c0288b78729425805.stex"
+path="res://.import/depto02.png-24b920d79da612d70b55dddf077eac35.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/depto02.png"
-dest_files=[ "res://.import/depto02.png-d5a9f39617baa01c0288b78729425805.stex" ]
+source_file="res://Assets/depto02.png"
+dest_files=[ "res://.import/depto02.png-24b920d79da612d70b55dddf077eac35.stex" ]
 
 [params]
 

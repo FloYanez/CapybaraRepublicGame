@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/eric_apartment.png-36a45510c057e35c97e539b3073130fd.stex"
+path="res://.import/eric_apartment.png-3546e11ae87f9c147b2d3c41f6c436a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/tenants/eric_apartment.png"
-dest_files=[ "res://.import/eric_apartment.png-36a45510c057e35c97e539b3073130fd.stex" ]
+source_file="res://Assets/Sprites/tenants/eric_apartment.png"
+dest_files=[ "res://.import/eric_apartment.png-3546e11ae87f9c147b2d3c41f6c436a6.stex" ]
 
 [params]
 
