@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/night.png-cb4b5da6b7eef297eb0d08cb47fc0ba7.stex"
+path="res://.import/night.png-5d74c4687065e56cbfff5976d8b8f7fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/night.png"
-dest_files=[ "res://.import/night.png-cb4b5da6b7eef297eb0d08cb47fc0ba7.stex" ]
+source_file="res://assets/night.png"
+dest_files=[ "res://.import/night.png-5d74c4687065e56cbfff5976d8b8f7fb.stex" ]
 
 [params]
 

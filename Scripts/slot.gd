@@ -7,10 +7,13 @@ export(Texture) var full_texture
 
 var Item = preload("res://Escena/Item.tscn")
 onready var inventory = get_node("../../..")
+onready var building = get_node("../../../../..")
 export var empty = true setget set_empty
-var _item setget set_item_icon
+var _item setget set_item
 var _legend setget set_legend
 var _icon setget set_item_icon
+
+var controller = Gamecontroller
 
 func _ready():
 	connect("gui_input", self, "_on_gui_input")
@@ -34,7 +37,13 @@ func set_item_icon(value):
 	
 func _on_gui_input(event: InputEvent):
 	if event is InputEventMouseButton:
-		print("hizo click")
+		controller.set_current_action(_item)
+		inventory.visible = false
+		#var apartments = building.get_child(3)
+		#var i = 0
+		#while i < apartments.get_child_count():
+		#	print(apartments.get_child(i))
+		#	i += 1
 		
 	elif event is InputEventMouseMotion and not empty:
 		inventory.set_legend(_legend)

@@ -13,3 +13,4 @@ apartment = ExtResource( 2 )
 likes = {
 "lights_off": true
 }
+name = "Vampire"

@@ -19,10 +19,6 @@ func _ready():
 		slot.set_legend(items[slotIndex].legend)
 		slot.set_item_icon(items[slotIndex].icon)
 		_legends.append(items[slotIndex].legend)
-	
-func _input(event):
-	if event.is_action_pressed("pause") and not event.is_echo():
-		visible = true
 		
 func set_legend(value):
 	_legend = value

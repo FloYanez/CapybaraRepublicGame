@@ -9,11 +9,6 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Resource",
-"class": "Inquilino",
-"language": "GDScript",
-"path": "res://Scripts/inquilino.gd"
-}, {
 "base": "TextureRect",
 "class": "Slot",
 "language": "GDScript",
@@ -25,7 +20,6 @@ _global_script_classes=[ {
 "path": "res://Scripts/Resources/tenant.gd"
 } ]
 _global_script_class_icons={
-"Inquilino": "",
 "Slot": "",
 "Tenant": ""
 }
@@ -39,6 +33,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Gamecontroller="*res://Scripts/gamecontroller.gd"
+Building="*res://Escena/Building.tscn"
 
 [importer_defaults]
 

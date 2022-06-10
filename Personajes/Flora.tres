@@ -12,3 +12,4 @@ side = ExtResource( 2 )
 apartment = ExtResource( 3 )
 likes = {
 }
+name = "Flora"

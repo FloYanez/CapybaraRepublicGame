@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Scripts/ActionsMenu.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/InventoryMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/inventory/inventory_bg.png" type="Texture" id=2]
 [ext_resource path="res://Escena/slot.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Escena/Item.tscn" type="PackedScene" id=4]
@@ -9,7 +9,7 @@
 [ext_resource path="res://Assets/Sprites/inventory/slot_full.png" type="Texture" id=7]
 [ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=8]
 
-[node name="ActionsMenu" type="MarginContainer"]
+[node name="InventoryMenu" type="MarginContainer"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0

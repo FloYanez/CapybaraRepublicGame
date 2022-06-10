@@ -1,17 +1,18 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Personajes/Flo.tres" type="Resource" id=1]
 [ext_resource path="res://Personajes/Chef.tres" type="Resource" id=2]
 [ext_resource path="res://Personajes/Eric.tres" type="Resource" id=3]
 [ext_resource path="res://Personajes/Milla.tres" type="Resource" id=4]
 [ext_resource path="res://Personajes/Vampire.tres" type="Resource" id=5]
-[ext_resource path="res://Escena/ActionsMenu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Escena/InventoryMenu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Building.gd" type="Script" id=7]
 [ext_resource path="res://Escena/animated_background.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Escena/genericApartment.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Personajes/Flora.tres" type="Resource" id=10]
 [ext_resource path="res://Assets/Sprites/elevator.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Sprites/inundacion.png" type="Texture" id=12]
+[ext_resource path="res://icon.png" type="Texture" id=13]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 12 )
@@ -87,9 +88,23 @@ __meta__ = {
 "_edit_vertical_guides_": [ 512.0 ]
 }
 
+[node name="ActionsMenu" parent="." instance=ExtResource( 6 )]
+visible = true
+margin_left = 257.0
+margin_top = 107.0
+margin_right = 1273.0
+margin_bottom = 874.0
+
 [node name="animated_background" parent="." instance=ExtResource( 8 )]
 position = Vector2( 498, 333 )
 scale = Vector2( 6, 6 )
+
+[node name="InventoryButton" type="TextureButton" parent="."]
+margin_left = 945.0
+margin_top = 13.0
+margin_right = 1012.0
+margin_bottom = 77.0
+texture_normal = ExtResource( 13 )
 
 [node name="Apartments" type="Node2D" parent="."]
 position = Vector2( 512, 416 )
@@ -136,9 +151,9 @@ texture = ExtResource( 11 )
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
-frame = 7
+frame = 9
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ActionsMenu" parent="CanvasLayer" instance=ExtResource( 6 )]
+[node name="InventoryMenu" parent="CanvasLayer" instance=ExtResource( 6 )]

@@ -54,3 +54,4 @@ func _on_Timer_timeout():
 	direction = floor(rand_range(-1, 2)) #saca un entero aleatorio, el floor le saca los decimales
 	print (direction)
 	pass # Replace with function body.	
+	
