@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/genericApartment.gd" type="Script" id=1]
 [ext_resource path="res://Escena/genericTenant.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Sprites/tenants/flo_apartment.png" type="Texture" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://Escena/hearts.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 96, 2 )
@@ -52,3 +53,10 @@ margin_right = 229.0
 margin_bottom = 72.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 4 )
+
+[node name="HBoxContainer" parent="." instance=ExtResource( 5 )]
+margin_left = 130.0
+margin_top = 6.0
+margin_right = 414.0
+margin_bottom = 38.0
+rect_scale = Vector2( 0.2, 0.2 )
