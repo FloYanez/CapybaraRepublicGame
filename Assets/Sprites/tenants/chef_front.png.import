@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chef_front.png-72d232fafd70e2da3daa60f23b8a562c.stex"
+path="res://.import/chef_front.png-098c0b1113477082c21086af51f4dd49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/tenants/chef_front.png"
-dest_files=[ "res://.import/chef_front.png-72d232fafd70e2da3daa60f23b8a562c.stex" ]
+source_file="res://Assets/Sprites/tenants/chef_front.png"
+dest_files=[ "res://.import/chef_front.png-098c0b1113477082c21086af51f4dd49.stex" ]
 
 [params]
 

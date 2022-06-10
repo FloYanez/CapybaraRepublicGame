@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/greedysabotage-Sheet.png-06022901bf56e5d3390b483b01080364.stex"
+path="res://.import/greedysabotage-Sheet.png-180996ee68220d30f8ec72e98ef98199.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/greedysabotage-Sheet.png"
-dest_files=[ "res://.import/greedysabotage-Sheet.png-06022901bf56e5d3390b483b01080364.stex" ]
+source_file="res://Assets/greedysabotage-Sheet.png"
+dest_files=[ "res://.import/greedysabotage-Sheet.png-180996ee68220d30f8ec72e98ef98199.stex" ]
 
 [params]
 

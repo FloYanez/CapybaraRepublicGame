@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inundacion.png-a1ecafd3a56f4d8a04512bd18604292c.stex"
+path="res://.import/inundacion.png-2efd3f233f9af79cd7619c99b0004431.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/inundacion.png"
-dest_files=[ "res://.import/inundacion.png-a1ecafd3a56f4d8a04512bd18604292c.stex" ]
+source_file="res://Assets/Sprites/inundacion.png"
+dest_files=[ "res://.import/inundacion.png-2efd3f233f9af79cd7619c99b0004431.stex" ]
 
 [params]
 
