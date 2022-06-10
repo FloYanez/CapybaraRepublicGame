@@ -89,7 +89,6 @@ __meta__ = {
 }
 
 [node name="ActionsMenu" parent="." instance=ExtResource( 6 )]
-visible = true
 margin_left = 257.0
 margin_top = 107.0
 margin_right = 1273.0
@@ -151,7 +150,7 @@ texture = ExtResource( 11 )
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

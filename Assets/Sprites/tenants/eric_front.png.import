@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/eric_front.png-a149f7a461f1c271b6c4e949c1118ae1.stex"
+path="res://.import/eric_front.png-ab9c1612ce15571f1eb48e6bbd0057cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tenants/eric_front.png"
-dest_files=[ "res://.import/eric_front.png-a149f7a461f1c271b6c4e949c1118ae1.stex" ]
+source_file="res://assets/Sprites/tenants/eric_front.png"
+dest_files=[ "res://.import/eric_front.png-ab9c1612ce15571f1eb48e6bbd0057cf.stex" ]
 
 [params]
 

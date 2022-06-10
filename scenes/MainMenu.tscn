@@ -95,21 +95,22 @@ scale = Vector2( 6, 6 )
 position = Vector2( 824, 456 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 16 )
+frame = 1
 speed_scale = 2.0
 playing = true
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 margin_left = 414.0
-margin_top = 264.0
+margin_top = 245.0
 margin_right = 610.0
-margin_bottom = 336.0
+margin_bottom = 355.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource( 4 )
 
 [node name="VBoxContainer" type="GridContainer" parent="PanelContainer"]
 margin_right = 196.0
-margin_bottom = 72.0
+margin_bottom = 110.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
 theme = SubResource( 4 )
@@ -140,3 +141,10 @@ margin_right = 196.0
 margin_bottom = 72.0
 theme = ExtResource( 5 )
 text = "Exit"
+
+[node name="Credits" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 76.0
+margin_right = 196.0
+margin_bottom = 110.0
+theme = ExtResource( 5 )
+text = "Credits"

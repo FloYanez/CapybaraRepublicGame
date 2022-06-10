@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/new_theme.tres" type="Theme" id=1]
+[ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=2]
+[ext_resource path="res://assets/day.png" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 597.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color( 0.14902, 0.160784, 0.258824, 0.686275 )
+margin_right = 1026.0
+margin_bottom = 598.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+margin_left = 402.0
+margin_top = 32.0
+margin_right = 593.0
+margin_bottom = 83.0
+theme = ExtResource( 1 )
+text = "Credits"
+align = 1
+
+[node name="PanelContainer" type="VBoxContainer" parent="."]
+margin_left = 356.0
+margin_top = 109.0
+margin_right = 646.0
+margin_bottom = 151.0
+theme = ExtResource( 2 )
+
+[node name="Nico" type="Label" parent="PanelContainer"]
+margin_right = 307.0
+margin_bottom = 28.0
+text = "Nicolás Lepín "
+align = 1
+
+[node name="Flo" type="Label" parent="PanelContainer"]
+margin_top = 32.0
+margin_right = 307.0
+margin_bottom = 60.0
+text = "Florencia Yáñez"
+align = 1
+
+[node name="Milla" type="Label" parent="PanelContainer"]
+margin_top = 64.0
+margin_right = 307.0
+margin_bottom = 92.0
+text = "Millaray Valdivia"
+align = 1

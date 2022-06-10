@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/genericApartment.gd" type="Script" id=1]
 [ext_resource path="res://Escena/genericTenant.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Sprites/tenants/flo_apartment.png" type="Texture" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=5]
 [ext_resource path="res://Escena/health_bar.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -54,7 +55,27 @@ margin_bottom = 72.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 4 )
 
-[node name="Control" parent="." instance=ExtResource( 6 )]
+[node name="Unoccupied" type="Control" parent="."]
+visible = false
+
+[node name="PanelContainer" type="PanelContainer" parent="Unoccupied"]
+modulate = Color( 0, 0, 0, 0.741176 )
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 190.0
+margin_bottom = 78.0
+
+[node name="Label" type="Label" parent="Unoccupied"]
+margin_left = 28.0
+margin_top = 29.0
+margin_right = 221.0
+margin_bottom = 57.0
+rect_scale = Vector2( 0.7, 0.7 )
+theme = ExtResource( 5 )
+text = "Desocupado"
+align = 1
+
+[node name="Hearts" parent="." instance=ExtResource( 6 )]
 margin_left = 64.0
 margin_top = 8.0
 margin_right = 64.0

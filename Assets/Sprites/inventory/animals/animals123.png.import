@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/animals123.png-5fe76d43a8831ed3872b58e5258cb631.stex"
+path="res://.import/animals123.png-8af666eca6e2d8c8b728e85f23af1fea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/inventory/animals/animals123.png"
-dest_files=[ "res://.import/animals123.png-5fe76d43a8831ed3872b58e5258cb631.stex" ]
+source_file="res://assets/Sprites/inventory/animals/animals123.png"
+dest_files=[ "res://.import/animals123.png-8af666eca6e2d8c8b728e85f23af1fea.stex" ]
 
 [params]
 

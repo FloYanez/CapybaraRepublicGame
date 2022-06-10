@@ -36,7 +36,7 @@ func set_item_icon(value):
 	set_empty(false)
 	
 func _on_gui_input(event: InputEvent):
-	if event is InputEventMouseButton:
+	if event is InputEventMouseButton and empty == false:
 		controller.set_current_action(_item)
 		inventory.visible = false
 		#var apartments = building.get_child(3)
