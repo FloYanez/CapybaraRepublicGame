@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Doublespace/PeaberryDoublespace.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=2]
+[ext_resource path="res://assets/greedysabotage-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://resources/panel_theme.tres" type="Theme" id=4]
+[ext_resource path="res://Scripts/Pause.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=10]
+default_font = SubResource( 3 )
+Button/fonts/font = null
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 81, 31 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 3 )
+region = Rect2( 81, 0, 81, 31 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 3 )
+region = Rect2( 162, 0, 81, 31 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 3 )
+region = Rect2( 243, 0, 81, 31 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 3 )
+region = Rect2( 324, 0, 81, 31 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Pause" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = 20.0
+script = ExtResource( 5 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.5
+margin_top = -55.0
+margin_right = 86.5
+margin_bottom = 55.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 4 )
+
+[node name="VBoxContainer" type="GridContainer" parent="PanelContainer"]
+margin_left = 1.0
+margin_right = 172.0
+margin_bottom = 110.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = SubResource( 10 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PanelContainer/VBoxContainer"]
+position = Vector2( 98, -72 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 11 )
+playing = true
+
+[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_right = 171.0
+margin_bottom = 34.0
+theme = ExtResource( 2 )
+text = "  Resume   "
+
+[node name="Exit" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 38.0
+margin_right = 171.0
+margin_bottom = 72.0
+theme = ExtResource( 2 )
+text = "Exit"
+
+[node name="MainMenu" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 76.0
+margin_right = 171.0
+margin_bottom = 110.0
+theme = ExtResource( 2 )
+text = "MainMenu"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Personajes/Flo.tres" type="Resource" id=1]
 [ext_resource path="res://Personajes/Chef.tres" type="Resource" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Assets/Sprites/elevator.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Sprites/inundacion.png" type="Texture" id=12]
 [ext_resource path="res://icon.png" type="Texture" id=13]
+[ext_resource path="res://Escena/Pause.tscn" type="PackedScene" id=14]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 12 )
@@ -88,12 +89,6 @@ __meta__ = {
 "_edit_vertical_guides_": [ 512.0 ]
 }
 
-[node name="ActionsMenu" parent="." instance=ExtResource( 6 )]
-margin_left = 257.0
-margin_top = 107.0
-margin_right = 1273.0
-margin_bottom = 874.0
-
 [node name="animated_background" parent="." instance=ExtResource( 8 )]
 position = Vector2( 498, 333 )
 scale = Vector2( 6, 6 )
@@ -150,9 +145,13 @@ texture = ExtResource( 11 )
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
-frame = 8
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="InventoryMenu" parent="CanvasLayer" instance=ExtResource( 6 )]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Pause" parent="CanvasLayer2" instance=ExtResource( 14 )]
+pause_mode = 2
