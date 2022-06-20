@@ -15,14 +15,8 @@ func _ready():
 	menu.connect("pressed", self, "_on_menu_pressed")
 	visible = false
 
-func _input(event):
-	if event.is_action_pressed("pause") and not event.is_echo():
-		print("pause")
-		get_tree().paused = true
-		self.visible = true
 		
 func _on_resume_pressed():
-	print("resume")
 	get_tree().paused = false
 	self.visible = false
 	

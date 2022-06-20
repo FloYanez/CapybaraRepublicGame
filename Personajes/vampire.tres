@@ -15,5 +15,5 @@ likes = {
 "luz": 2,
 "raton": 1
 }
-current_likes = 0
+current_likes = 8
 name = "Vampire"
