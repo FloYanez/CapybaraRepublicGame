@@ -40,15 +40,3 @@ margin_left = 180.0
 margin_right = 212.0
 margin_bottom = 32.0
 texture = ExtResource( 2 )
-
-[node name="TextureRect7" type="TextureRect" parent="."]
-margin_left = 216.0
-margin_right = 248.0
-margin_bottom = 32.0
-texture = ExtResource( 2 )
-
-[node name="TextureRect8" type="TextureRect" parent="."]
-margin_left = 252.0
-margin_right = 284.0
-margin_bottom = 32.0
-texture = ExtResource( 2 )

@@ -3,7 +3,7 @@ onready var health_bar = $hearts
 var heart_count
 var max_health
 func _ready():
-	heart_count = 8
+	heart_count = 6
 	max_health = heart_count
 	update_count()
 	
