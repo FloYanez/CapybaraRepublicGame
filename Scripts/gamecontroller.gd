@@ -1,6 +1,7 @@
 extends Node
 var action_counter=0
 var current_action_count = 0
+var money= 15000
 var _current_action setget set_current_action
 var _legend = "Esta casilla está vacía."
 var tenants_apartments = []
@@ -35,6 +36,8 @@ func increase_action_counter():
 		action_counter = 0 
 		day = not day
 		yield(background,"animation_finished")#espera la ejecución de código
+
+
 
 
 
