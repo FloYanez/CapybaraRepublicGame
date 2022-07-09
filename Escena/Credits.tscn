@@ -32,7 +32,7 @@ theme = ExtResource( 2 )
 [node name="Nico" type="Label" parent="PanelContainer"]
 margin_right = 307.0
 margin_bottom = 28.0
-text = "Nicolás Lepín "
+text = "Nicolás Lepin "
 align = 1
 
 [node name="Flo" type="Label" parent="PanelContainer"]
