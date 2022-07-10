@@ -185,7 +185,7 @@ texture = ExtResource( 11 )
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
-frame = 7
+frame = 14
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -203,8 +203,8 @@ pause_mode = 2
 
 [node name="Sprite" type="Sprite" parent="black_box"]
 modulate = Color( 0.141176, 0.145098, 0.207843, 0 )
-position = Vector2( 499, 297.5 )
-scale = Vector2( 2.388, 1.306 )
+position = Vector2( 608, 301 )
+scale = Vector2( 2.472, 1.306 )
 texture = ExtResource( 16 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="black_box"]

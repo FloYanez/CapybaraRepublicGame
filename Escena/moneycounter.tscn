@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/moneycounter.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/money.gd" type="Script" id=2]
@@ -6,6 +6,26 @@
 [ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=4]
 [ext_resource path="res://assets/coin/Full Coins red.png" type="Texture" id=5]
 [ext_resource path="res://assets/coin/UI-02.png" type="Texture" id=6]
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "RESET"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "spin"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=5]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=6]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id=7]
+states/RESET/node = SubResource( 3 )
+states/RESET/position = Vector2( 588, 46 )
+states/spin/node = SubResource( 4 )
+states/spin/position = Vector2( 389, 34 )
+transitions = [ "RESET", "spin", SubResource( 5 ), "spin", "RESET", SubResource( 6 ) ]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=8]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -52,6 +72,33 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -128,6 +175,12 @@ valign = 1
 uppercase = true
 script = ExtResource( 2 )
 
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 7 )
+anim_player = NodePath("../Sprite/AnimationPlayer")
+active = true
+parameters/playback = SubResource( 8 )
+
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 48, 47 )
 scale = Vector2( 3, 3 )
@@ -135,4 +188,5 @@ texture = ExtResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
 anims/RESET = SubResource( 1 )
+anims/idle = SubResource( 9 )
 anims/spin = SubResource( 2 )

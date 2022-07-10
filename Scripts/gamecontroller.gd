@@ -8,15 +8,18 @@ var tenants_apartments = []
 var day = true
 var background = null
 var building = null
-onready var moneycounter = preload("res://Scripts/moneycounter.gd")
-
-	
+var moneycounter= null
+#onready var moneycounter= get_node("res://Scripts/moneycounter.gd")
+#onready var moneycounter = preload("res://Scripts/moneycounter.gd")
+#func _ready():
+#	Gamecontroller.moneycounter = self
 func set_current_action(action):
 	_current_action = action
 	while tenants_apartments.size() > 6:
 		tenants_apartments.pop_front()
 	for i in tenants_apartments:
 		i.apply_button.visible = true
+	
 		
 func use_action():
 	current_action_count +=1
@@ -38,8 +41,6 @@ func increase_action_counter():
 			background.play_backwards("Day")
 			money -=5000 
 			moneycounter.coin_spin()
-#			if money <=0:
-#				get_tree().change_scene("res://Escena/gameover.tscn")
 		action_counter = 0 
 		day = not day
 		yield(background,"animation_finished")#espera la ejecución de código
