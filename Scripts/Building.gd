@@ -3,9 +3,16 @@ onready var backgroundcycle = $Background/AnimationPlayer
 onready var InventoryButton = $InventoryButton
 onready var inventory = $CanvasLayer/InventoryMenu
 onready var pause = $CanvasLayer2/Pause
+onready var fade_to_anim = $black_box/AnimationPlayer
 var day = true        #empieza en día
 var accept_input= true
 
+func _process(delta):
+	if Gamecontroller.money <=0:
+		fade_to_anim.play("fade_to")
+		yield(get_tree().create_timer(1), "timeout")
+		get_tree().change_scene("res://Escena/gameover.tscn")
+		
 func _ready():
 	InventoryButton.connect("pressed", self, "on_inventory_pressed")
 	Gamecontroller.background = backgroundcycle

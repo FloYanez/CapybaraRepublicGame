@@ -1,7 +1,7 @@
 extends Node
 var action_counter=0
 var current_action_count = 0
-var money= 15000 #setget set_money
+var money= 5000
 var _current_action setget set_current_action
 var _legend = "Esta casilla está vacía."
 var tenants_apartments = []
@@ -10,8 +10,7 @@ var background = null
 var building = null
 onready var moneycounter = preload("res://Scripts/moneycounter.gd")
 
-#func _ready():
-#	moneycounter.coin_spin()
+	
 func set_current_action(action):
 	_current_action = action
 	while tenants_apartments.size() > 6:
@@ -28,7 +27,7 @@ func use_action():
 			i.apply_button.visible = false
 		current_action_count = 0
 	increase_action_counter()
-#	price_decrease()
+#
 			
 func increase_action_counter():
 	action_counter +=1
@@ -39,6 +38,8 @@ func increase_action_counter():
 			background.play_backwards("Day")
 			money -=5000 
 			moneycounter.coin_spin()
+#			if money <=0:
+#				get_tree().change_scene("res://Escena/gameover.tscn")
 		action_counter = 0 
 		day = not day
 		yield(background,"animation_finished")#espera la ejecución de código

@@ -17,9 +17,11 @@ func _ready():
 
 func _on_play_pressed():
 	get_tree().change_scene("res://Escena/Intro.tscn")
+	Gamecontroller.money = 5000
 	
 func _on_exit_pressed():
 	get_tree().quit() 
 
 func _on_credits_pressed():
 	get_tree().change_scene("res://Escena/Credits.tscn")
+#	get_tree().change_scene("res://Escena/gameover.tscn")
