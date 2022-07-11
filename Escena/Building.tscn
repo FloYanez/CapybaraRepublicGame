@@ -185,6 +185,7 @@ texture = ExtResource( 11 )
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
+frame = 2
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
