@@ -8,7 +8,8 @@ onready var unoccupied_panel = $Unoccupied
 onready var unoccupied = false
 export(Resource) var tenant
 
-var building = preload("res://Scripts/Building.gd")
+onready var building = get_node("../..")
+
 var heart_count
 
 func _ready():

@@ -168,23 +168,25 @@ tenant = ExtResource( 2 )
 position = Vector2( 36, -152 )
 tenant = ExtResource( 10 )
 
-[node name="Elevators" type="Node2D" parent="Apartments"]
+[node name="Elevators" type="Node2D" parent="."]
+position = Vector2( 512, 416 )
+scale = Vector2( 2, 2 )
 
-[node name="3" type="Sprite" parent="Apartments/Elevators"]
+[node name="3" type="Sprite" parent="Elevators"]
 position = Vector2( 0, -112 )
 texture = ExtResource( 11 )
 
-[node name="2" type="Sprite" parent="Apartments/Elevators"]
+[node name="2" type="Sprite" parent="Elevators"]
 position = Vector2( 0, -36 )
 texture = ExtResource( 11 )
 
-[node name="1" type="Sprite" parent="Apartments/Elevators"]
+[node name="1" type="Sprite" parent="Elevators"]
 position = Vector2( 0, 40 )
 texture = ExtResource( 11 )
 
-[node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
-visible = false
-position = Vector2( -132, 40 )
+[node name="flood_animation" type="AnimatedSprite" parent="."]
+position = Vector2( 248, 496 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 30 )
 frame = 3
 playing = true

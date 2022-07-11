@@ -147,9 +147,6 @@ texture_pressed = ExtResource( 4 )
 texture_hover = ExtResource( 5 )
 expand = true
 stretch_mode = 5
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Label" type="Label" parent="exit"]
 margin_left = 32.0
