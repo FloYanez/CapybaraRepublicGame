@@ -18,7 +18,7 @@ func set_current_action(action):
 	while tenants_apartments.size() > 6:
 		tenants_apartments.pop_front()
 	for i in tenants_apartments:
-		i.apply_button.visible = true
+		i.apply_action_button()
 	
 		
 func use_action():
