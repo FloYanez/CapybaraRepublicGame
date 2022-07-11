@@ -8,6 +8,7 @@ onready var unoccupied_panel = $Unoccupied
 onready var unoccupied = false
 export(Resource) var tenant
 
+var building = preload("res://Scripts/Building.gd")
 var heart_count
 
 func _ready():
@@ -24,6 +25,7 @@ func on_apply():
 			unoccupied_panel.visible = true 
 			unoccupied = true  #aca
 			tenant_container.visible = false
+			building.check_all_gone()
 		elif new_count > 6:
 			new_count = 6
 		tenant.current_likes = new_count

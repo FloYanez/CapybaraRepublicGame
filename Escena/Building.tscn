@@ -140,11 +140,18 @@ texture_focused = ExtResource( 17 )
 expand = true
 stretch_mode = 5
 
+[node name="Vampire" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 584, 264 )
+scale = Vector2( 2, 2 )
+tenant = ExtResource( 5 )
+
 [node name="Apartments" type="Node2D" parent="."]
 position = Vector2( 512, 416 )
 scale = Vector2( 2, 2 )
 
 [node name="Flo" parent="Apartments" instance=ExtResource( 9 )]
+visible = false
 position = Vector2( -228, 0 )
 tenant = ExtResource( 1 )
 
@@ -169,6 +176,7 @@ position = Vector2( 36, -152 )
 tenant = ExtResource( 10 )
 
 [node name="Elevators" type="Node2D" parent="Apartments"]
+visible = false
 
 [node name="3" type="Sprite" parent="Apartments/Elevators"]
 position = Vector2( 0, -112 )
@@ -183,19 +191,26 @@ position = Vector2( 0, 40 )
 texture = ExtResource( 11 )
 
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
+visible = false
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
+<<<<<<< HEAD
 frame = 5
+=======
+frame = 4
+>>>>>>> 75a02cdba1a25f0d8dcbd651e39a2806378abf9e
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="InventoryMenu" parent="CanvasLayer" instance=ExtResource( 6 )]
+visible = false
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="Pause" parent="CanvasLayer2" instance=ExtResource( 14 )]
 pause_mode = 2
+visible = false
 
 [node name="Control" parent="." instance=ExtResource( 15 )]
 
