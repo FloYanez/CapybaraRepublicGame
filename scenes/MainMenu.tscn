@@ -118,7 +118,6 @@ theme = SubResource( 4 )
 position = Vector2( 98, -72 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Play" type="Button" parent="PanelContainer/VBoxContainer"]

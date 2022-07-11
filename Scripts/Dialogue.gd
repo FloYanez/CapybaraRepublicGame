@@ -2,7 +2,7 @@ extends Control
 
 var dialog
 var dialog_index = 0
-var finished = false # que al final del dialogo cambi esta variable a true, y al final tiene que haber una funcion que se active es verdadera y pase a la siguiente escena
+var finished = false # que al final del dialogo cambi esta variable a true, y 
 var end_intro = false
 
 onready var transition_timer = get_node("Sprite/transition_timer")

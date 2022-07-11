@@ -8,6 +8,7 @@ onready var apartments_ref = $Apartments
 var day = true        #empieza en día
 var accept_input= true
 var all_gone= false
+var are_unnocupied = 0
 
 func _process(delta):
 	if Gamecontroller.money <=0:
@@ -16,13 +17,20 @@ func _process(delta):
 		get_tree().change_scene("res://Escena/gameover.tscn")
 	if all_gone:
 		get_tree().change_scene("res://Escena/victory.tscn")
-		
+	print(all_gone)
+	print(are_unnocupied)
+#	print(apartments_ref.get_child_count())
+	
 func check_all_gone():
 	for inquilino in apartments_ref:
 		if inquilino.unnocupied:
-			all_gone = true
-		else:
-			all_gone = false
+#			all_gone = true  
+			are_unnocupied += 1
+#		else:
+#			all_gone = false
+	if are_unnocupied==1:
+		get_tree().change_scene("res://Escena/victory.tscn")
+		all_gone = true
 	return all_gone
 			
 func _ready():
