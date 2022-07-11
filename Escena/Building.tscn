@@ -149,22 +149,27 @@ position = Vector2( -228, 0 )
 tenant = ExtResource( 1 )
 
 [node name="Milla" parent="Apartments" instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 36, 0 )
 tenant = ExtResource( 4 )
 
 [node name="Eric" parent="Apartments" instance=ExtResource( 9 )]
+visible = false
 position = Vector2( -228, -76 )
 tenant = ExtResource( 3 )
 
 [node name="Vampire" parent="Apartments" instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 36, -76 )
 tenant = ExtResource( 5 )
 
 [node name="Chef" parent="Apartments" instance=ExtResource( 9 )]
+visible = false
 position = Vector2( -228, -152 )
 tenant = ExtResource( 2 )
 
 [node name="Flora" parent="Apartments" instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 36, -152 )
 tenant = ExtResource( 10 )
 
@@ -185,7 +190,7 @@ texture = ExtResource( 11 )
 [node name="flood_animation" type="AnimatedSprite" parent="Apartments"]
 position = Vector2( -132, 40 )
 frames = SubResource( 30 )
-frame = 2
+frame = 10
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

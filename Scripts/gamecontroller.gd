@@ -9,10 +9,7 @@ var day = true
 var background = null
 var building = null
 var moneycounter= null
-#onready var moneycounter= get_node("res://Scripts/moneycounter.gd")
-#onready var moneycounter = preload("res://Scripts/moneycounter.gd")
-#func _ready():
-#	Gamecontroller.moneycounter = self
+
 func set_current_action(action):
 	_current_action = action
 	while tenants_apartments.size() > 6:

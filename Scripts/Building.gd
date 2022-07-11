@@ -4,15 +4,27 @@ onready var InventoryButton = $InventoryButton
 onready var inventory = $CanvasLayer/InventoryMenu
 onready var pause = $CanvasLayer2/Pause
 onready var fade_to_anim = $black_box/AnimationPlayer
+onready var apartments_ref = $Apartments
 var day = true        #empieza en día
 var accept_input= true
+var all_gone= false
 
 func _process(delta):
 	if Gamecontroller.money <=0:
 		fade_to_anim.play("fade_to")
 		yield(get_tree().create_timer(1), "timeout")
 		get_tree().change_scene("res://Escena/gameover.tscn")
+	if all_gone:
+		get_tree().change_scene("res://Escena/victory.tscn")
 		
+func check_all_gone():
+	for inquilino in apartments_ref:
+		if inquilino.unnocupied:
+			all_gone = true
+		else:
+			all_gone = false
+	return all_gone
+			
 func _ready():
 	InventoryButton.connect("pressed", self, "on_inventory_pressed")
 	Gamecontroller.background = backgroundcycle

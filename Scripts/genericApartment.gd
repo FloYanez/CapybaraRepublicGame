@@ -22,7 +22,7 @@ func on_apply():
 		if new_count <= 0:
 			new_count = 0
 			unoccupied_panel.visible = true 
-			unoccupied = true
+			unoccupied = true  #aca
 			tenant_container.visible = false
 		elif new_count > 6:
 			new_count = 6
