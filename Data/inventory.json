@@ -2,7 +2,7 @@
     "0": {
         "item": "agua",
         "icon": "waterdrop.png",
-        "legend": "Cortar el agua en el departamento del inquilino."
+        "legend": "Romper una cañería e inundar el departamento del inquilino."
     },
     "1": {
         "item": "raton",
@@ -13,5 +13,25 @@
         "item": "luz",
         "icon": "lights5_2.png",
         "legend": "Cortar la luz en el departamento del inquilino."
+    },
+    "3": {
+        "item": "musica",
+        "icon": "lights5_2.png",
+        "legend": "Poner música en altavoz cerca del departamento del inquilino."
+    },
+    "4": {
+        "item": "aire",
+        "icon": "lights5_2.png",
+        "legend": "Apagar aire acondicionado del departamento del inquiino."
+    },
+    "5": {
+        "item": "alarma",
+        "icon": "lights5_2.png",
+        "legend": "Activar alarma de incendios dentro del departamento del inquilino."
+    },
+    "6": {
+        "item": "olor",
+        "icon": "lights5_2.png",
+        "legend": "Esparcir mal olor cerca del departamento del inquilino."
     }
 }

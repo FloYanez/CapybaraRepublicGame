@@ -12,7 +12,11 @@ side = ExtResource( 2 )
 apartment = ExtResource( 3 )
 likes = {
 "agua": 2,
+"aire": -2,
+"alarma": -1,
 "luz": -2,
+"musica": -1,
+"olor": 0,
 "raton": 0
 }
 current_likes = 6
