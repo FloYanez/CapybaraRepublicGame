@@ -45,11 +45,6 @@ func _physics_process(delta): #gravedad
 		velocity.x= direction*horizontal_speed
 		sprite.flip_h = true
 		
-#	if velocity.x > 0:
-#		sprite.flip_h = false
-#	elif velocity.x < 0:
-#		sprite.flip_h = true
-		
 func _on_Timer_timeout():
 	direction = floor(rand_range(-1, 2)) #saca un entero aleatorio, el floor le saca los decimales
 	pass # Replace with function body.	
