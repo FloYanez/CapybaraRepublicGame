@@ -22,12 +22,12 @@
     "4": {
         "item": "aire",
         "icon": "ac.png",
-        "legend": "Apagar aire acondicionado del departamento del inquiino."
+        "legend": "Apagar aire acondicionado del departamento del inquilino."
     },
     "5": {
-        "item": "alarma",
-        "icon": "lights5_2.png",
-        "legend": "Activar alarma de incendios dentro del departamento del inquilino."
+        "item": "fuego",
+        "icon": "fiyah.png",
+        "legend": "Inicia un pequeñito incendio en el departamento del inquilino."
     },
     "6": {
         "item": "olor",
