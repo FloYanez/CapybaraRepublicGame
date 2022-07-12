@@ -76,6 +76,14 @@ margin_top = 160.0
 margin_right = 400.0
 margin_bottom = 188.0
 text = "Icons: VectorPixelStar"
+align = 1
+
+[node name="assets" type="Label" parent="PanelContainer"]
+margin_top = 192.0
+margin_right = 400.0
+margin_bottom = 220.0
+text = "Assets: pH64"
+align = 1
 
 [node name="assets" type="VBoxContainer" parent="."]
 visible = false

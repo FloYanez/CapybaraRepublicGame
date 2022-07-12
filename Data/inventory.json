@@ -16,12 +16,12 @@
     },
     "3": {
         "item": "musica",
-        "icon": "lights5_2.png",
+        "icon": "music.png",
         "legend": "Poner música en altavoz cerca del departamento del inquilino."
     },
     "4": {
         "item": "aire",
-        "icon": "lights5_2.png",
+        "icon": "ac.png",
         "legend": "Apagar aire acondicionado del departamento del inquiino."
     },
     "5": {
@@ -31,7 +31,7 @@
     },
     "6": {
         "item": "olor",
-        "icon": "lights5_2.png",
+        "icon": "stinky.png",
         "legend": "Esparcir mal olor cerca del departamento del inquilino."
     }
 }
