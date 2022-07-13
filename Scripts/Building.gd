@@ -5,6 +5,7 @@ onready var inventory = $CanvasLayer/InventoryMenu
 onready var pause = $CanvasLayer2/Pause
 onready var fade_to_anim = $black_box/AnimationPlayer
 onready var apartments_ref = $Apartments
+onready var pause_button = $pause_button
 var day = true        #empieza en día
 var accept_input= true
 var all_gone= false
@@ -36,6 +37,7 @@ func check_all_gone():
 			
 func _ready():
 	InventoryButton.connect("pressed", self, "on_inventory_pressed")
+	pause_button.connect("pressed", self, "on_pause_pressed")
 	Gamecontroller.background = backgroundcycle
 	Gamecontroller.building = self
 	
@@ -52,3 +54,7 @@ func on_inventory_pressed():
 
 func on_inventory_closed():
 	inventory.visible = false
+
+func on_pause_pressed():
+	get_tree().paused = true
+	pause.visible = true
