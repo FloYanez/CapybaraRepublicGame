@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/InventoryMenu.gd" type="Script" id=1]
+[ext_resource path="res://assets/Nueva carpeta/UI-18.png" type="Texture" id=2]
 [ext_resource path="res://Escena/slot.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Escena/Item.tscn" type="PackedScene" id=4]
 [ext_resource path="res://resources/new_theme.tres" type="Theme" id=5]
 [ext_resource path="res://Assets/Sprites/inventory/slot_empty.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Sprites/inventory/slot_full.png" type="Texture" id=7]
 [ext_resource path="res://resources/buttons_theme.tres" type="Theme" id=8]
+[ext_resource path="res://assets/Nueva carpeta/UI-20.png" type="Texture" id=9]
 
 [node name="InventoryMenu" type="MarginContainer"]
 anchor_right = 1.0
@@ -26,25 +28,49 @@ color = Color( 0.1508, 0.16172, 0.26, 1 )
 
 [node name="Inventory" type="GridContainer" parent="."]
 margin_left = 520.0
-margin_top = 219.0
+margin_top = 147.0
 margin_right = 1536.0
-margin_bottom = 986.0
+margin_bottom = 1059.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Label" type="Label" parent="Inventory"]
-margin_left = 259.0
-margin_right = 757.0
-margin_bottom = 105.0
+[node name="Titulo" type="NinePatchRect" parent="Inventory"]
+margin_right = 1016.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 10, 250 )
+size_flags_vertical = 0
+texture = ExtResource( 6 )
+patch_margin_left = 86
+patch_margin_top = 86
+patch_margin_right = 86
+patch_margin_bottom = 86
+
+[node name="close" type="TextureButton" parent="Inventory/Titulo"]
+margin_left = 1368.0
+margin_top = -97.0
+margin_right = 1573.0
+margin_bottom = 108.0
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Inventory/Titulo"]
+margin_left = 244.0
+margin_top = 101.0
+margin_right = 746.0
+margin_bottom = 206.0
 size_flags_horizontal = 4
 theme = ExtResource( 5 )
 text = "Sabotage Inventory
 "
 
 [node name="Items" type="GridContainer" parent="Inventory"]
-margin_top = 109.0
+margin_top = 254.0
 margin_right = 1016.0
-margin_bottom = 513.0
+margin_bottom = 658.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 columns = 5
@@ -118,9 +144,9 @@ margin_right = 1016.0
 margin_bottom = 404.0
 
 [node name="Legend" type="NinePatchRect" parent="Inventory"]
-margin_top = 517.0
+margin_top = 662.0
 margin_right = 1016.0
-margin_bottom = 767.0
+margin_bottom = 912.0
 rect_min_size = Vector2( 10, 250 )
 texture = ExtResource( 6 )
 patch_margin_left = 86

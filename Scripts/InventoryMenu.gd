@@ -2,13 +2,14 @@ extends MarginContainer
 
 onready var grid_container = $Inventory/Items
 onready var legend_label = $Inventory/Legend/LegendLabel
-
+onready var close_button = $Inventory/Titulo/close
 var _legend setget set_legend 
 var _legends = []
 var _effects = []
 
 func _ready():
 	visible = false 
+	close_button.connect("pressed", self, "on_close_pressed")
 	var file = File.new()
 	file.open("res://Data/inventory.json", File.READ)
 	var items = JSON.parse(file.get_as_text()).result
@@ -29,7 +30,9 @@ func set_legend(value):
 	
 func set_legend_null():
 	legend_label.visible = false
-	
+
+func on_close_pressed():
+	self.visible = false
 	
 	
 
