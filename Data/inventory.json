@@ -30,7 +30,7 @@
         "effect": "anim_AC.tscn"
     },
     "5": {
-        "item": "alarma",
+        "item": "alarma20:12 12-07-2022",
         "icon": "fiyah.png",
         "legend": "Inicia un pequeñito incendio en el departamento del inquilino.",
         "effect": "anim_fuegito.tscn"
