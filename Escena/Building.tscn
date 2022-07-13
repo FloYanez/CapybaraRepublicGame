@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Personajes/Flo.tres" type="Resource" id=1]
 [ext_resource path="res://Personajes/Chef.tres" type="Resource" id=2]
@@ -118,14 +118,6 @@ texture = ExtResource( 11 )
 [node name="1" type="Sprite" parent="Elevators"]
 position = Vector2( 0, 40 )
 texture = ExtResource( 11 )
-
-
-[node name="flood_animation" type="AnimatedSprite" parent="."]
-position = Vector2( 248, 496 )
-scale = Vector2( 2, 2 )
-frames = SubResource( 30 )
-frame = 14
-playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
