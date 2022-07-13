@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/plaga-Sheet (1).png-ed06ae3cb9e6edb9e954dc2af26ed2f4.stex"
+path="res://.import/plaga-Sheet (1).png-18f369a92e763f78e86f73f87abc2c40.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/action anims/plaga-Sheet (1).png"
-dest_files=[ "res://.import/plaga-Sheet (1).png-ed06ae3cb9e6edb9e954dc2af26ed2f4.stex" ]
+source_file="res://Assets/action anims/plaga-Sheet (1).png"
+dest_files=[ "res://.import/plaga-Sheet (1).png-18f369a92e763f78e86f73f87abc2c40.stex" ]
 
 [params]
 

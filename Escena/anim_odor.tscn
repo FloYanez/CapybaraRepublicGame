@@ -5,6 +5,7 @@
 
 [sub_resource type="Animation" id=2]
 length = 0.001
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
@@ -57,6 +58,7 @@ tracks/3/keys = {
 [sub_resource type="Animation" id=1]
 resource_name = "odor"
 length = 2.5
+loop = true
 step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:texture")
@@ -116,7 +118,7 @@ anims/RESET = SubResource( 2 )
 anims/odor = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 524, 338 )
+position = Vector2( 96, 40 )
 texture = ExtResource( 2 )
 hframes = 16
 vframes = 15

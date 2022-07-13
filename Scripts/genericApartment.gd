@@ -6,6 +6,14 @@ onready var apply_button = $ApplyButton
 onready var health_bar = $Hearts
 onready var unoccupied_panel = $Unoccupied
 onready var unoccupied = false
+onready var current_effect = null
+onready var effects = {	"agua": preload("res://Escena/anim_sunk.tscn"),
+						"raton": preload("res://Escena/anim_ratón.tscn"),
+						"luz": preload("res://Escena/anim_light.tscn"),
+						"musica": preload("res://Escena/anim_music.tscn"),
+						"aire": preload("res://Escena/anim_AC.tscn"),
+						"alarma": preload("res://Escena/anim_fuegito.tscn"),
+						"olor": preload("res://Escena/anim_odor.tscn")}
 export(Resource) var tenant
 
 onready var building = get_node("../..")
@@ -21,9 +29,13 @@ func _ready():
 func on_apply():
 	if Gamecontroller._current_action != null:
 		var new_count = tenant.current_likes + tenant.likes[Gamecontroller._current_action]
+		if current_effect != null:
+			current_effect.queue_free()
+		current_effect = effects[Gamecontroller._current_action].instance()
+		add_child(current_effect,0)
 		if new_count <= 0:
 			new_count = 0
-			unoccupied_panel.visible = true 
+			unoccupied_panel.visible = true
 			unoccupied = true  #aca
 			tenant_container.visible = false
 			building.check_all_gone()

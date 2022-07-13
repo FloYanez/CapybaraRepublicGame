@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Personajes/Flo.tres" type="Resource" id=1]
 [ext_resource path="res://Personajes/Chef.tres" type="Resource" id=2]
@@ -11,81 +11,12 @@
 [ext_resource path="res://Escena/genericApartment.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Personajes/Flora.tres" type="Resource" id=10]
 [ext_resource path="res://Assets/Sprites/elevator.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Sprites/inundacion.png" type="Texture" id=12]
 [ext_resource path="res://assets/chest_closed.png" type="Texture" id=13]
 [ext_resource path="res://Escena/Pause.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Escena/moneycounter.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/White-square.jpg" type="Texture" id=16]
 [ext_resource path="res://assets/chest_open.png" type="Texture" id=17]
 [ext_resource path="res://resources/local-forecast-slower-by-kevin-macleod-from-filmmusic-io.mp3" type="AudioStream" id=18]
-
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 12 )
-region = Rect2( 0, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 12 )
-region = Rect2( 192, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 12 )
-region = Rect2( 384, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 12 )
-region = Rect2( 576, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 12 )
-region = Rect2( 768, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 12 )
-region = Rect2( 960, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 12 )
-region = Rect2( 1152, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 12 )
-region = Rect2( 1344, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 12 )
-region = Rect2( 1536, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 12 )
-region = Rect2( 1728, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 12 )
-region = Rect2( 1920, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 12 )
-region = Rect2( 2112, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 12 )
-region = Rect2( 2304, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 12 )
-region = Rect2( 2496, 0, 192, 80 )
-
-[sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 12 )
-region = Rect2( 2688, 0, 192, 80 )
-
-[sub_resource type="SpriteFrames" id=30]
-animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
 
 [sub_resource type="Animation" id=31]
 length = 0.001
@@ -184,13 +115,6 @@ texture = ExtResource( 11 )
 [node name="1" type="Sprite" parent="Elevators"]
 position = Vector2( 0, 40 )
 texture = ExtResource( 11 )
-
-[node name="flood_animation" type="AnimatedSprite" parent="."]
-position = Vector2( 248, 496 )
-scale = Vector2( 2, 2 )
-frames = SubResource( 30 )
-frame = 8
-playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

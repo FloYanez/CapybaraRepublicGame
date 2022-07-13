@@ -5,6 +5,7 @@
 
 [sub_resource type="Animation" id=1]
 length = 0.001
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
@@ -57,6 +58,7 @@ tracks/3/keys = {
 [sub_resource type="Animation" id=2]
 resource_name = "plaga"
 length = 3.1
+loop = true
 step = 0.04
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:texture")
@@ -108,15 +110,16 @@ tracks/3/keys = {
 }
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 257, 115 )
 script = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Sprite")
+playback_speed = 0.7
 anims/RESET = SubResource( 1 )
 anims/plaga = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 96, 40 )
 texture = ExtResource( 1 )
 hframes = 9
 vframes = 9

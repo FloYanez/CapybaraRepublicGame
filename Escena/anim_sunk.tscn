@@ -107,10 +107,10 @@ tracks/3/keys = {
 }
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 456, 318 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 96, 40 )
 texture = ExtResource( 1 )
 hframes = 15
 

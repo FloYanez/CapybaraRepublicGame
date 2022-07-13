@@ -2,36 +2,43 @@
     "0": {
         "item": "agua",
         "icon": "waterdrop.png",
-        "legend": "Romper una cañería e inundar el departamento del inquilino."
+        "legend": "Romper una cañería e inundar el departamento del inquilino.",
+        "effect": "anim_sunk.tscn"
     },
     "1": {
         "item": "raton",
         "icon": "animals200_2.png",
-        "legend": "Invadir departamento del inquilino con una plaga de ratas."
+        "legend": "Invadir departamento del inquilino con una plaga de ratas.",
+        "effect": "anim_ratón.tscn"
     },
     "2": {
         "item": "luz",
         "icon": "lights5_2.png",
-        "legend": "Cortar la luz en el departamento del inquilino."
+        "legend": "Cortar la luz en el departamento del inquilino.",
+        "effect": "anim_light.tscn"
     },
     "3": {
         "item": "musica",
         "icon": "music.png",
-        "legend": "Poner música en altavoz cerca del departamento del inquilino."
+        "legend": "Poner música en altavoz cerca del departamento del inquilino.",
+        "effect": "anim_music.tscn"
     },
     "4": {
         "item": "aire",
         "icon": "ac.png",
-        "legend": "Apagar aire acondicionado del departamento del inquilino."
+        "legend": "Apagar aire acondicionado del departamento del inquilino.",
+        "effect": "anim_AC.tscn"
     },
     "5": {
         "item": "alarma",
         "icon": "fiyah.png",
-        "legend": "Inicia un pequeñito incendio en el departamento del inquilino."
+        "legend": "Inicia un pequeñito incendio en el departamento del inquilino.",
+        "effect": "anim_fuegito.tscn"
     },
     "6": {
         "item": "olor",
         "icon": "stinky.png",
-        "legend": "Esparcir mal olor cerca del departamento del inquilino."
+        "legend": "Esparcir mal olor cerca del departamento del inquilino.",
+        "effect": "anim_odor.tscn"
     }
 }

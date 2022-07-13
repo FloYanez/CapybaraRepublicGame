@@ -5,6 +5,7 @@ onready var legend_label = $Inventory/Legend/LegendLabel
 
 var _legend setget set_legend 
 var _legends = []
+var _effects = []
 
 func _ready():
 	visible = false 
@@ -19,6 +20,7 @@ func _ready():
 		slot.set_legend(items[slotIndex].legend)
 		slot.set_item_icon(items[slotIndex].icon)
 		_legends.append(items[slotIndex].legend)
+		_effects.append(items[slotIndex].effect)
 		
 func set_legend(value):
 	_legend = value
