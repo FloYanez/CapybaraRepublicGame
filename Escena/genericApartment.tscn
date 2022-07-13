@@ -57,7 +57,7 @@ rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 4 )
 texture_hover = ExtResource( 7 )
-texture_focused = ExtResource( 4 )
+texture_focused = ExtResource( 8 )
 expand = true
 
 [node name="Unoccupied" type="Control" parent="."]

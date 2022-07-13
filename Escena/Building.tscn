@@ -116,6 +116,14 @@ texture = ExtResource( 11 )
 position = Vector2( 0, 40 )
 texture = ExtResource( 11 )
 
+
+[node name="flood_animation" type="AnimatedSprite" parent="."]
+position = Vector2( 248, 496 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 30 )
+frame = 6
+playing = true
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="InventoryMenu" parent="CanvasLayer" instance=ExtResource( 6 )]
