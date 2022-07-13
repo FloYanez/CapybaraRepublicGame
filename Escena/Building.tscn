@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Personajes/Flo.tres" type="Resource" id=1]
 [ext_resource path="res://Personajes/Chef.tres" type="Resource" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Escena/moneycounter.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/White-square.jpg" type="Texture" id=16]
 [ext_resource path="res://assets/chest_open.png" type="Texture" id=17]
+[ext_resource path="res://resources/local-forecast-slower-by-kevin-macleod-from-filmmusic-io.mp3" type="AudioStream" id=18]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 12 )
@@ -188,7 +189,7 @@ texture = ExtResource( 11 )
 position = Vector2( 248, 496 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 30 )
-frame = 11
+frame = 5
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -216,3 +217,8 @@ texture = ExtResource( 16 )
 root_node = NodePath("../Sprite")
 anims/RESET = SubResource( 31 )
 anims/fade_to = SubResource( 32 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+volume_db = -40.857
+autoplay = true
