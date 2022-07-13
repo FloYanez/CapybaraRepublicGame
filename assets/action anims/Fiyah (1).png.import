@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fiyah (1).png-3d71badb22f6004eada5397a81af4ca7.stex"
+path="res://.import/Fiyah (1).png-3b06d28ad70b7531558a0a5401f1e9f4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/action anims/Fiyah (1).png"
-dest_files=[ "res://.import/Fiyah (1).png-3d71badb22f6004eada5397a81af4ca7.stex" ]
+source_file="res://Assets/action anims/Fiyah (1).png"
+dest_files=[ "res://.import/Fiyah (1).png-3b06d28ad70b7531558a0a5401f1e9f4.stex" ]
 
 [params]
 

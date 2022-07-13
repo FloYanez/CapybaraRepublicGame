@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/NewCanvas1.png-6b2aeb9293be1e06e9b5a8105d6cdce8.stex"
+path="res://.import/NewCanvas1.png-a753eb5115405eae67d6ab322d288828.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NewCanvas1.png"
-dest_files=[ "res://.import/NewCanvas1.png-6b2aeb9293be1e06e9b5a8105d6cdce8.stex" ]
+source_file="res://Assets/NewCanvas1.png"
+dest_files=[ "res://.import/NewCanvas1.png-a753eb5115405eae67d6ab322d288828.stex" ]
 
 [params]
 

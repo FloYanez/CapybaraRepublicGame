@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quitpressed.png-813dcbca7d020002bfb71e752d676da6.stex"
+path="res://.import/quitpressed.png-6fd5b29aca49d04b250d6fcb8708eb74.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Nueva carpeta/quitpressed.png"
-dest_files=[ "res://.import/quitpressed.png-813dcbca7d020002bfb71e752d676da6.stex" ]
+source_file="res://Assets/Nueva carpeta/quitpressed.png"
+dest_files=[ "res://.import/quitpressed.png-6fd5b29aca49d04b250d6fcb8708eb74.stex" ]
 
 [params]
 

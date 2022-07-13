@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/star coin 6.png-0d79bbc5632fb348e569e0f5b4cd8542.stex"
+path="res://.import/star coin 6.png-400cf2aa5101972d688a013702bd9a83.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/star coin shine/star coin 6.png"
-dest_files=[ "res://.import/star coin 6.png-0d79bbc5632fb348e569e0f5b4cd8542.stex" ]
+source_file="res://Assets/star coin shine/star coin 6.png"
+dest_files=[ "res://.import/star coin 6.png-400cf2aa5101972d688a013702bd9a83.stex" ]
 
 [params]
 

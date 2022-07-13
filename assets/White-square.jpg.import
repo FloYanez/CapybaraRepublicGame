@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/White-square.jpg-e3e7cb90de379a96c59eb89627a32356.stex"
+path="res://.import/White-square.jpg-fefa9c12959341c45b3c8c238f990172.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/White-square.jpg"
-dest_files=[ "res://.import/White-square.jpg-e3e7cb90de379a96c59eb89627a32356.stex" ]
+source_file="res://Assets/White-square.jpg"
+dest_files=[ "res://.import/White-square.jpg-fefa9c12959341c45b3c8c238f990172.stex" ]
 
 [params]
 

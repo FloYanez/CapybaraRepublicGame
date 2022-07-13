@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hand_light.png-a8d230df2a8fb48ad44be83333e347a0.stex"
+path="res://.import/hand_light.png-a0a1930ef9f6e4f04ab07713987c26e5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hand_light.png"
-dest_files=[ "res://.import/hand_light.png-a8d230df2a8fb48ad44be83333e347a0.stex" ]
+source_file="res://Assets/hand_light.png"
+dest_files=[ "res://.import/hand_light.png-a0a1930ef9f6e4f04ab07713987c26e5.stex" ]
 
 [params]
 

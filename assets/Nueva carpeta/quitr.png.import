@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quitr.png-b075ed225e560faf56624a5fe4583c7e.stex"
+path="res://.import/quitr.png-f3f8f9d6ff80d15b8c4f93f1d05360ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Nueva carpeta/quitr.png"
-dest_files=[ "res://.import/quitr.png-b075ed225e560faf56624a5fe4583c7e.stex" ]
+source_file="res://Assets/Nueva carpeta/quitr.png"
+dest_files=[ "res://.import/quitr.png-f3f8f9d6ff80d15b8c4f93f1d05360ae.stex" ]
 
 [params]
 

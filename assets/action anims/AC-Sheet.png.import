@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/AC-Sheet.png-c228193a6c78cfb16fba5633a29e9bf6.stex"
+path="res://.import/AC-Sheet.png-ed6d31c402d6760d7e69b46fe3f133b0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/action anims/AC-Sheet.png"
-dest_files=[ "res://.import/AC-Sheet.png-c228193a6c78cfb16fba5633a29e9bf6.stex" ]
+source_file="res://Assets/action anims/AC-Sheet.png"
+dest_files=[ "res://.import/AC-Sheet.png-ed6d31c402d6760d7e69b46fe3f133b0.stex" ]
 
 [params]
 
