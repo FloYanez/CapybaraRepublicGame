@@ -39,6 +39,7 @@ func on_apply():
 			unoccupied = true  #aca
 			tenant_container.visible = false
 			building.check_all_gone()
+			current_effect.queue_free()
 		elif new_count > 6:
 			new_count = 6
 		tenant.current_likes = new_count
