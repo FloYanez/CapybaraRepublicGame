@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coinshine.png-ecf83494a8c7e44b0172ce9718b18cce.stex"
+path="res://.import/coinshine.png-96b3e6410ef6a525470e302028c3193c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/star coin shine/coinshine.png"
-dest_files=[ "res://.import/coinshine.png-ecf83494a8c7e44b0172ce9718b18cce.stex" ]
+source_file="res://assets/star coin shine/coinshine.png"
+dest_files=[ "res://.import/coinshine.png-96b3e6410ef6a525470e302028c3193c.stex" ]
 
 [params]
 

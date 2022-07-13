@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire_anim.png-afc89d6829bd2e62113c68df34aa9a60.stex"
+path="res://.import/fire_anim.png-24fa92c9faaa8f854a375907084c6ddf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/action anims/fire_anim.png"
-dest_files=[ "res://.import/fire_anim.png-afc89d6829bd2e62113c68df34aa9a60.stex" ]
+source_file="res://assets/action anims/fire_anim.png"
+dest_files=[ "res://.import/fire_anim.png-24fa92c9faaa8f854a375907084c6ddf.stex" ]
 
 [params]
 

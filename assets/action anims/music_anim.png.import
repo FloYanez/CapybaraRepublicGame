@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/music_anim.png-08696953e2690362662633a1207a15da.stex"
+path="res://.import/music_anim.png-ab8b8bc74538e56edea87b1474f54988.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/action anims/music_anim.png"
-dest_files=[ "res://.import/music_anim.png-08696953e2690362662633a1207a15da.stex" ]
+source_file="res://assets/action anims/music_anim.png"
+dest_files=[ "res://.import/music_anim.png-ab8b8bc74538e56edea87b1474f54988.stex" ]
 
 [params]
 

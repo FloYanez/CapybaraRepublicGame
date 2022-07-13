@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Full Coins red.png-0671faebe8d4fb9783fc2801df0fa164.stex"
+path="res://.import/Full Coins red.png-c5f4e951f1a780ac89802ccd9e73e0e1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/coin/Full Coins red.png"
-dest_files=[ "res://.import/Full Coins red.png-0671faebe8d4fb9783fc2801df0fa164.stex" ]
+source_file="res://assets/coin/Full Coins red.png"
+dest_files=[ "res://.import/Full Coins red.png-c5f4e951f1a780ac89802ccd9e73e0e1.stex" ]
 
 [params]
 

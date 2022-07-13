@@ -1,11 +1,18 @@
 extends Node2D
 onready var backgroundcycle = $Background/AnimationPlayer
-onready var InventoryButton = $InventoryButton
-onready var inventory = $CanvasLayer/InventoryMenu
-onready var pause = $CanvasLayer2/Pause
 onready var fade_to_anim = $black_box/AnimationPlayer
 onready var apartments_ref = $Apartments
+
+onready var pause = $CanvasLayer2/Pause
 onready var pause_button = $pause_button
+
+onready var music_button = $music_button
+onready var Music = $Music
+onready var play_music = true
+
+onready var InventoryButton = $InventoryButton
+onready var inventory = $CanvasLayer/InventoryMenu
+
 var day = true        #empieza en día
 var accept_input= true
 var all_gone= false
@@ -38,6 +45,8 @@ func check_all_gone():
 func _ready():
 	InventoryButton.connect("pressed", self, "on_inventory_pressed")
 	pause_button.connect("pressed", self, "on_pause_pressed")
+	music_button.connect("pressed", self, "on_music_pressed")
+	Music.playing = play_music
 	Gamecontroller.background = backgroundcycle
 	Gamecontroller.building = self
 	
@@ -58,3 +67,9 @@ func on_inventory_closed():
 func on_pause_pressed():
 	get_tree().paused = true
 	pause.visible = true
+
+func on_music_pressed():
+	play_music = !play_music
+	Music.playing = play_music
+
+

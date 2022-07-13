@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stinky.png-9ce4703cb888c52a3828562c1d21e36f.stex"
+path="res://.import/stinky.png-c8f19b7ad950fe7f8690dfb9bd54b9f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/inventory/stinky.png"
-dest_files=[ "res://.import/stinky.png-9ce4703cb888c52a3828562c1d21e36f.stex" ]
+source_file="res://assets/Sprites/inventory/stinky.png"
+dest_files=[ "res://.import/stinky.png-c8f19b7ad950fe7f8690dfb9bd54b9f8.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/olor-Sheet-gradient.png-c2a30bbc818a30e2199e68a5d0ac171f.stex"
+path="res://.import/olor-Sheet-gradient.png-65c795ede272e93d0bb892416f2793ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/action anims/olor-Sheet-gradient.png"
-dest_files=[ "res://.import/olor-Sheet-gradient.png-c2a30bbc818a30e2199e68a5d0ac171f.stex" ]
+source_file="res://assets/action anims/olor-Sheet-gradient.png"
+dest_files=[ "res://.import/olor-Sheet-gradient.png-65c795ede272e93d0bb892416f2793ea.stex" ]
 
 [params]
 

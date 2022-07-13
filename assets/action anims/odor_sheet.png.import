@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/odor_sheet.png-be44f3270575fdfabe73949b69638c48.stex"
+path="res://.import/odor_sheet.png-71e2b2dd696b5514a817a04a1fcbe909.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/action anims/odor_sheet.png"
-dest_files=[ "res://.import/odor_sheet.png-be44f3270575fdfabe73949b69638c48.stex" ]
+source_file="res://assets/action anims/odor_sheet.png"
+dest_files=[ "res://.import/odor_sheet.png-71e2b2dd696b5514a817a04a1fcbe909.stex" ]
 
 [params]
 
