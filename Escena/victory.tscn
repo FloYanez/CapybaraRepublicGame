@@ -57,7 +57,6 @@ __meta__ = {
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="black_box" type="Sprite" parent="CanvasLayer"]
-visible = false
 modulate = Color( 0.141176, 0.145098, 0.207843, 1 )
 position = Vector2( 516, 304 )
 scale = Vector2( 2.128, 1.28 )

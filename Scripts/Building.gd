@@ -15,8 +15,8 @@ func _process(delta):
 		fade_to_anim.play("fade_to")
 		yield(get_tree().create_timer(1), "timeout")
 		get_tree().change_scene("res://Escena/gameover.tscn")
-	if all_gone:
-		get_tree().change_scene("res://Escena/victory.tscn")
+#	if all_gone:
+#		get_tree().change_scene("res://Escena/victory.tscn")
 	
 	
 func check_all_gone():
@@ -25,6 +25,8 @@ func check_all_gone():
 		if inquilino.unoccupied:
 			are_unoccupied += 1
 	if are_unoccupied==apartments_ref.get_child_count():
+		fade_to_anim.play("fade_to")
+		yield(get_tree().create_timer(1), "timeout")
 		get_tree().change_scene("res://Escena/victory.tscn")
 		all_gone = true
 	print(all_gone)

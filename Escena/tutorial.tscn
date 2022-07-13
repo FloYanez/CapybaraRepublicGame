@@ -38,41 +38,43 @@ de manera que desalojen el hotel."
 
 [node name="corazones" type="Label" parent="."]
 margin_left = 384.0
-margin_top = 296.0
+margin_top = 240.0
 margin_right = 1072.0
-margin_bottom = 510.0
+margin_bottom = 485.0
 theme = ExtResource( 4 )
 text = "Las acciones tendrán diferente 
 efecto sobre los inquilinos.
 
 Estos desalojarán cuando su barra 
-de corazónes se vacie.
+de corazónes se vacie. Una vez todos
+desalojen, ganarás el juego.
 
 "
 
 [node name="score" type="Label" parent="."]
 margin_left = 384.0
-margin_top = 480.0
+margin_top = 464.0
 margin_right = 1072.0
-margin_bottom = 570.0
+margin_bottom = 585.0
 theme = ExtResource( 4 )
-text = "Acá se indica la oferta de Don Capy,
-representa tu puntuación.
-Esta disminuirá con tus acciones"
+text = "Indica la oferta de Don Capy,
+esta representa tu puntuación.
+Esta disminuirá con tus acciones y 
+terminará el juego al llegar a 0."
 
 [node name="inventario" type="Label" parent="."]
 margin_left = 384.0
-margin_top = 176.0
+margin_top = 152.0
 margin_right = 1072.0
-margin_bottom = 235.0
+margin_bottom = 211.0
 theme = ExtResource( 4 )
 text = "Usa el ícono del cofre para acceder
  a tu inventario de acciones."
 
 [node name="InventoryButton" type="TextureButton" parent="."]
-margin_left = 304.0
+margin_left = 224.0
 margin_top = 144.0
-margin_right = 371.0
+margin_right = 291.0
 margin_bottom = 208.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 5 )
@@ -108,17 +110,17 @@ scale = Vector2( 0.2, 0.2 )
 
 [node name="tutorial health" parent="." instance=ExtResource( 3 )]
 margin_left = 152.0
-margin_top = 312.0
+margin_top = 248.0
 margin_right = 152.0
-margin_bottom = 312.0
+margin_bottom = 248.0
 
 [node name="Control" parent="tutorial health" instance=ExtResource( 7 )]
-margin_top = 88.0
-margin_bottom = 88.0
+margin_top = 112.0
+margin_bottom = 112.0
 
 [node name="Control" parent="." instance=ExtResource( 8 )]
 margin_left = 136.0
-margin_top = 488.0
+margin_top = 480.0
 margin_right = 136.0
-margin_bottom = 488.0
+margin_bottom = 480.0
 rect_scale = Vector2( 0.8, 0.8 )
