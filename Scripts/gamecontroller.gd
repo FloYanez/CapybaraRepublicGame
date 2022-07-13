@@ -7,7 +7,7 @@ var _legend = "Esta casilla está vacía."
 var tenants_apartments = []
 var day = true
 var background = null
-var building = null
+var building = null  
 var moneycounter= null
 
 func set_current_action(action):
